@@ -19,6 +19,8 @@ A local server will be launched in your console and the Web application page wil
 
 ## Copyright & Licensing
 
+Code and documentation is released under copyright 2020 Patrick Desmarais.
+
 This project is released under MIT, see [LICENSE.md](https://github.com/desmarais-patrick/amnesic-timesheet/blob/master/LICENSE).
 
 ## Contact Information
