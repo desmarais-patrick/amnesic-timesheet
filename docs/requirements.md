@@ -1,6 +1,10 @@
 # Software requirements
 
+## Intro
+
 The requirements clearly translate what is to build from the user perspective.
+Hence, this article is meant for designers, developers and testers 
+of this system.
 
 Requirements aim to be:
 
@@ -18,6 +22,7 @@ Requirements aim to be:
 
 The requirements have been divided into:
 
+1. Overall description
 1. Business requirements
 1. User requirements
 1. Functional requirements
@@ -25,6 +30,26 @@ The requirements have been divided into:
 1. Interface requirements
 
 The writing style for the following requirements is *traditional text*.
+
+## Overall description
+
+The *amnesic timesheet* project originated from an idea to improve logging
+time spent on different work activities to report to managers at work.
+While keeping history of all work days isn't relevant, the logging could be
+amnesic to only one day.
+
+The following information is relevant to time logging:
+
+- Start time
+- End time
+- Time spent on breaks
+- Number of breaks
+- Type of activities performed during the day and how long
+- Total amount of time worked
+
+The target users are office workers, such as software developers.
+Such users may aim to improve their estimation skills or learn about their
+capacity to better answer how much work they can take.
 
 ## Business requirements
 
