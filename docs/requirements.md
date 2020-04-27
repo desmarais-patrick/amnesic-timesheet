@@ -1,24 +1,25 @@
 # Software requirements
 
-## Intro
+## About this documentation
 
-The requirements clearly translate what is to build from the user perspective.
-Hence, this article is meant for designers, developers and testers 
-of this system.
+The requirements aim to clearly translate what is to be built 
+from the user's perspective.
+This article is meant for designers, developers and testers.
 
 Requirements aim to be:
 
 - *Cohesive* units, about one thing ☝
 - *Fully described*, in one place 📦
-- *Consistent*, avoiding contradictions and ambiguity between each one 🚅
+- *Consistent*, avoiding contradictions and ambiguity with each other 🚅
 - *Atomic*, as in validate A and B becomes validate A and validate B 🔬
 - *Traceable*, as all requirements are in and well labeled with IDs 🔖
-- *Current* and maintained, to avoid obsolete items and confusion ✨
+- *Current* and maintained, to avoid obsolete items and 
+  confusion with farfetched features ✨
 - *Unambiguous*, with minimal jargon and extra details, factual and subject 
   to one interpretation 🔑
 - *With specified importance* based on user value, stakeholder value, 
-  time or budget 🏆
-- *Verifiable* or testable, as being to add a checkmark once built 🔨
+  time or budget (shall, should, could, ) 🏆
+- *Verifiable* or testable, as checkmark-able once built 🔨
 
 The requirements have been divided into:
 
@@ -29,23 +30,72 @@ The requirements have been divided into:
 1. Non-functional requirements
 1. Interface requirements
 
-The writing style for the following requirements is *traditional text*.
+The writing style for the following requirements varies between:
+
+- *traditional text*,
+- *user stories*, and
+- *use cases*.
+
+Happy reading! 🙂
+
 
 ## Overall description
 
 The *amnesic timesheet* project originated from an idea to improve logging
-time spent on different work activities to report to managers at work.
-While keeping history of all work days isn't relevant, the logging could be
-amnesic to only one day.
+time spent on different work activities. The motivation behind tracking this
+time is two-fold:
+
+- Learn about estimating work and capacity
+- Share this information with managers for project control
+
+While other software allow to report such information everyday,
+keeping history of all work days isn't relevant for this system.
+The logging could be amnesic, restricted to one day at a time;
+however, it could be saved in later project iterations.
+
+**Logging**
 
 The following information is relevant to time logging:
 
 - Start time
 - End time
-- Time spent on breaks
+- Time spent on breaks (to subtract from total time)
+- Time spent on activities and projects
+
+With this information, we can compute more metrics such as the total time spent
+on breaks and the total time spent working.
+
+**Planning and estimating**
+
+The following information is relevant to planning and estimating:
+
+- Top priorities and goals
+- Time distribution and guidelines
+- Schedule with day events (ex. meeting)
+- Steps to accomplish an activity
+- Daily activities
+
+With this information, we can get an overview of the expected time to spend
+before starting logging our activities and adjust plan as we learn.
+
+**Reviewing**
+
+The following information is relevant to reviewing:
+
+- Levels of energy when day started and day ended
+- Overall feelings during the day (ex. frustrations, happy moments)
 - Number of breaks
-- Type of activities performed during the day and how long
-- Total amount of time worked
+- Perceived productivity
+- Estimation effectiveness
+- Number of priorities accomplished
+- What I am grateful for
+- Lessons to take from the day
+- Feedback notes and points of improvements
+- Progress towards short-, medium- and long-term goals (big picture)
+
+The review helps with introspection and requires a step back.
+
+--
 
 The target users are office workers, such as software developers.
 Such users may aim to improve their estimation skills or learn about their
@@ -64,7 +114,7 @@ enabling users to record the time spent on different activities for a given day.
 U.1.
 The user
 should be able to
-enter the amount time spent on break
+enter the amount of time spent on break
 for computing total time at work within start and end times.
 #breaks
 
