@@ -1,6 +1,6 @@
 # Software Documentation
 
-The documentation contained in this directory aims to get everyone on the 
+The documentation contained here aims to get everyone on the 
 same page and explain software decisions when it isn't obvious.
 It aims to:
 
