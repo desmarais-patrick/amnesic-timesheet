@@ -104,10 +104,22 @@ capacity to better answer how much work they can take.
 ## Business requirements (B)
 
 🔖 B.1.
-The project
+The system
 shall
-produce a timesheet system
-enabling users to record the time spent on different activities for a given day.
+allow users to enter time spent on different activities for a given day
+in order to log this information for review at the end of the day.
+
+🔖 B.2.
+The system
+shall
+produce an overall report system
+enabling users to review and copy the time information into another system.
+
+🔖 B.3.
+The system
+shall
+allow users to enter a day plan according to project priorities
+enabling users to compare time logged with day play.
 
 ## User requirements (U)
 
