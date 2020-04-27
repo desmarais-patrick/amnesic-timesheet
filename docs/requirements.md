@@ -101,54 +101,54 @@ The target users are office workers, such as software developers.
 Such users may aim to improve their estimation skills or learn about their
 capacity to better answer how much work they can take.
 
-## Business requirements
+## Business requirements (B)
 
-B.1.
+🔖 B.1.
 The project
 shall
 produce a timesheet system
 enabling users to record the time spent on different activities for a given day.
 
-## User requirements
+## User requirements (U)
 
-U.1.
+🔖 U.1.
 The user
 should be able to
-enter the amount of time spent on break
+enter the amount of time spent on breaks
 for computing total time at work within start and end times.
-#breaks
+🛋 *breaks*
 
-U.2.
+🔖 U.2.
 The user
 should
 receive a report to find total time spent on work activities during a day.
-#report
+🗄 *report*
 
-U.3.
+🔖 U.3.
 The user
 should have enough information to
 report their time spent to another system based on the computed time.
-#report
+🗄 *report*
 
-## Functional requirements
+## Functional requirements (F)
 
 <sub>Next ID: F.11.</sub>
 
 ### Amnesic
 
-F.1.
+🔖 F.1.
 The timesheet system
 shall
 record time information for one work day at a time.
 
-F.2.
+🔖 F.2.
 The timesheet system
 may
 reset its values to record fresh time information.
 
 ### Initialization
 
-F.3.
+🔖 F.3.
 The timesheet system
 should
 allow to record what was done at a given time during the day
@@ -156,35 +156,35 @@ between a start time and an end time.
 
 ### Inputs
 
-F.4.
+🔖 F.4.
 The timesheet system
 shall
 support time inputs in the following format: `h:mm T`.
-#input
+✏ *input*
 
 ### Schedule
 
-F.5.
+🔖 F.5.
 The timesheet system
 shall
 present a time schedule based on the start and end times.
 
-F.6.
+🔖 F.6.
 The timesheet system
 shall
 allow identification of a break period.
 
-F.7.
+🔖 F.7.
 The timesheet system
 shall
 allow adding a description of the activity performance.
 
-F.8.
+🔖 F.8.
 The timesheet system
 shall
 distinguish between a planned activity and a logged activity.
 
-F.10.
+🔖 F.10.
 The timesheet system
 shall
 assume that empty activity descriptions, without break indication,
@@ -192,7 +192,7 @@ mean that the same activity was repeated based on previous time slot.
 
 ### Report
 
-F.9.
+🔖 F.9.
 The timesheet system
 shall
 compute a time summary based on the logged activity.
@@ -200,24 +200,24 @@ compute a time summary based on the logged activity.
 
 ## Non-functional requirements
 
-NF.1.
+🔖 NF.1.
 The system
 should
 open in less than one second.
 
-NF.2.
+🔖 NF.2.
 The system
 should
 display computed results instantly or less than one second.
 
 ## Interface requirements
 
-I.1.
+🔖 I.1.
 The interface
 shall
 support a desktop experience.
 
-I.3.
+🔖 I.3.
 The interface
 should
 support mobile, tablet and desktop dimensions
@@ -227,7 +227,7 @@ in the latest version of any of the following browsers:
 - Mozilla Firefox
 - Safari
 
-I.2.
+🔖 I.2.
 The interface 
 shall
 display validation messages when inputs are contradicting,
