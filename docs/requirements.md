@@ -63,7 +63,8 @@ The following information is relevant to time logging:
 - Time spent on activities and projects
 
 With this information, we can compute more metrics such as the total time spent
-on breaks and the total time spent working.
+on breaks and the total time spent working. This time is useful to copy over
+another timesheet system used by the organization.
 
 **Planning and estimating**
 
@@ -97,120 +98,164 @@ The review helps with introspection and requires a step back.
 
 --
 
+The following requirements may not encompass all the content described
+in this overall description at first, but the requirements will grow
+with the project.
+
 The target users are office workers, such as software developers.
 Such users may aim to improve their estimation skills or learn about their
 capacity to better answer how much work they can take.
 
 ## Business requirements (B)
 
-🔖 B.1.
+Business requirements describe high-level features.
+They are requirements seen from a 30'000-foot viewpoint.
+
+The following requirements are written using *traditional text*.
+
+📄 B.1.
 The system
 shall
 allow users to enter time spent on different activities for a given day
 in order to log this information for review at the end of the day.
 
-🔖 B.2.
+📄 B.2.
 The system
 shall
-produce an overall report system
+produce an overall report
 enabling users to review and copy the time information into another system.
 
-🔖 B.3.
+📄 B.3.
 The system
 shall
 allow users to enter a day plan according to project priorities
-enabling users to compare time logged with day play.
+enabling users to compare time logged with day plan.
 
 ## User requirements (U)
 
-🔖 U.1.
-The user
-should be able to
-enter the amount of time spent on breaks
-for computing total time at work within start and end times.
+User requirements describe features from the point of view of the user.
+
+The following requirements are written using *user stories*.
+
+📖 U.1.
+In order to review how much time was spent on work,
+users need to subtract the time spent on breaks from total time at work,
+based on a start and end time.
 🛋 *breaks*
 
-🔖 U.2.
-The user
-should
-receive a report to find total time spent on work activities during a day.
+📖 U.2.
+In order to report total time spent on work activities in a day,
+users want to review a sum of all time spent on those activities.
 🗄 *report*
 
-🔖 U.3.
-The user
-should have enough information to
-report their time spent to another system based on the computed time.
-🗄 *report*
+📖 U.3.
+In order to review time spent per activity,
+users want to track the times of the day when activity was being accomplished.
+📝 *logging*
+
+📖 U.4.
+In order to plan and estimate time for activities in their day,
+users want to assign time slots to activity as the day starts.
+🎞 *planning*
 
 ## Functional requirements (F)
+
+Functional requirements outline the functions of the system with
+behaviours, inputs and outputs.
+
+The following requirements follow a *use case* form of description.
+A use case diagram support the use cases described below.
+
+Actors included in the following requirements include:
+
+- Software Developer (Patrick)
 
 <sub>Next ID: F.11.</sub>
 
 ### Amnesic
 
-🔖 F.1.
-The timesheet system
-shall
-record time information for one work day at a time.
+📒  F.1. Reset timesheet
 
-🔖 F.2.
-The timesheet system
-may
-reset its values to record fresh time information.
+Patrick enters their times for one day at a time.
+If day times are filled, they clear the timesheet to start a new one.
 
-### Initialization
+*Actor(s)*: Patrick
 
-🔖 F.3.
-The timesheet system
-should
-allow to record what was done at a given time during the day
-between a start time and an end time.
+*Scope*: Amnesic Timesheet Main
 
-### Inputs
+*Priority*: Essential
 
-🔖 F.4.
-The timesheet system
-shall
-support time inputs in the following format: `h:mm T`.
-✏ *input*
+*Assumptions*: Patrick works more than one day.
 
-### Schedule
+*Preconditions*: None
 
-🔖 F.5.
-The timesheet system
-shall
-present a time schedule based on the start and end times.
+*Postconditions*: Patrick is ready to start logging his times for today.
 
-🔖 F.6.
-The timesheet system
-shall
-allow identification of a break period.
+*Trigger*: Patrick starts a new day at work.
 
-🔖 F.7.
-The timesheet system
-shall
-allow adding a description of the activity performance.
+*Main success scenario*:
 
-🔖 F.8.
-The timesheet system
-shall
-distinguish between a planned activity and a logged activity.
+1. When Patrick opens the system at the beginning of the day, they see the 
+   last entry.
+1. Patrick resets the timesheet day.
+1. System forgets the last entry and displays a fresh timesheet.
 
-🔖 F.10.
-The timesheet system
-shall
-assume that empty activity descriptions, without break indication,
-mean that the same activity was repeated based on previous time slot.
+*Alternative scenario*:
 
-### Report
+If Patrick didn't record his time report for the previous day:
 
-🔖 F.9.
-The timesheet system
-shall
-compute a time summary based on the logged activity.
+1. Patrick opens the report and copies the information to the other system.
 
+*Tags*: 📝 *logging*, 🗄 *report*
+
+---
+
+### General
+
+📒 F.2. Enter reference times
+
+System receives input for start time and target duration,
+as well as expected number of 15-minute breaks.
+
+<!-- time inputs in the following format: `h:mm T`. -->
+
+*Tags*: 📝 *logging*, 🛋 *breaks*, 🎞 *planning*
+
+📒 F.3. Log activity
+
+System records a time period where the activity was performed
+with reference time guidelines.
+
+System shall record a short description of the activity.
+
+System differentiates breaks from work times.
+
+*Tags*: 📝 *logging*, 🛋 *breaks*
+
+---
+
+📒 F.4. Report time spent on activities
+
+System should sum time spent on work activities.
+
+*Tags*: 🗄 *report*
+
+---
+
+📒 F.5. Plan day activities
+
+System shall distinguish between a planned activity and a logged activity.
+
+*Tags*: 🎞 *planning*
+
+---
 
 ## Non-functional requirements
+
+Non-functional requirements describe what's around functionality:
+quality, constraints, non-behaviours, etc.
+
+The following requirements are written using *traditional text* style.
 
 🔖 NF.1.
 The system
@@ -223,6 +268,17 @@ should
 display computed results instantly or less than one second.
 
 ## Interface requirements
+
+The interface requirements outline interactions with the system.
+It includes:
+
+- Hardware requirements
+- Software requirements
+- System communication
+- User interfaces
+
+The following requirements use *traditional text* as the form of writing.
+Mockups and style guides accompany these requirements.
 
 🔖 I.1.
 The interface
