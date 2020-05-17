@@ -1,4 +1,4 @@
-# Software requirements
+# 1. Software requirements
 
 The requirements aim to clearly translate what is to be built 
 from the user's perspective.

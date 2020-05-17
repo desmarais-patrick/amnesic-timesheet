@@ -1,4 +1,4 @@
-# Interface requirements (I)
+# 1.6. Interface requirements (I)
 
 The interface requirements outline interactions with the system.
 It includes:

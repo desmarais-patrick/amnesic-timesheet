@@ -1,4 +1,4 @@
-## Functional requirements (F)
+## 1.4. Functional requirements (F)
 
 Functional requirements outline the functions of the system with
 behaviours, inputs and outputs.

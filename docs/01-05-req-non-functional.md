@@ -1,4 +1,4 @@
-# Non-functional requirements (NF)
+# 1.5. Non-functional requirements (NF)
 
 Non-functional requirements describe what's around functionality:
 quality, constraints, non-behaviours, etc.

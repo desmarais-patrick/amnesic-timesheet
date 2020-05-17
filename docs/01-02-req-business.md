@@ -1,4 +1,4 @@
-# Business requirements (B)
+# 1.2. Business requirements (B)
 
 Business requirements describe high-level features.
 They are requirements seen from a 30'000-foot viewpoint.

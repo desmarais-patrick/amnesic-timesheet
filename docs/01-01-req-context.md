@@ -1,4 +1,4 @@
-# Context (C)
+# 1.1. Context (C)
 
 The *amnesic timesheet* project originated from an idea to 
 improve logging the time spent on different work activities.
