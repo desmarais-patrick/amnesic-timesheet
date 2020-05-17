@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="use-case-diagram-amnesic-timesheet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect fill="#FFFFFF" x="0" y="0" width="500" height="400"></rect>
-        <g id="Actor" transform="translate(28.000000, 162.000000)">
+        <g id="Actor" transform="translate(20.000000, 161.000000)">
             <g>
                 <path d="M18.5,36.5 L0.5,47.5" id="arm-right" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
                 <path id="forearm-right" d="M20.9126536,60.782342 L16.0259659,51.986304 L10.9438107,59.4140694 L20.9126536,60.782342 Z M1.21765804,47.9126536 L13.6619698,56.4271827 L14.0746234,56.7095247 L14.6393073,55.8842174 L14.2266537,55.6018754 L1.78234196,47.0873464 L1.36968833,46.8050044 L0.805004412,47.6303117 L1.21765804,47.9126536 Z" fill="#979797" fill-rule="nonzero"></path>
@@ -18,31 +18,45 @@
                 <circle id="head" fill="#D8D8D8" fill-rule="nonzero" cx="23" cy="15" r="15"></circle>
             </g>
         </g>
-        <rect id="system-background" stroke="#979797" fill-rule="nonzero" x="111.5" y="61.5" width="299" height="299"></rect>
-        <text id="Amnesic-Timesheet" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="-0.388888896" fill="#333333">
-            <tspan x="203.219618" y="36">Amnesic Timesheet</tspan>
+        <rect id="system-background" stroke="#979797" fill-rule="nonzero" x="120.5" y="60.5" width="259" height="299"></rect>
+        <text id="Amnesic-Timesheet" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="-0.3888889" fill="#333333">
+            <tspan x="192.219618" y="37">Amnesic Timesheet</tspan>
         </text>
-        <g id="use-case-f-1" transform="translate(213.000000, 273.000000)">
+        <g id="use-case-f-5" transform="translate(140.000000, 290.000000)">
             <ellipse id="use-case-background" stroke="#979797" fill="#D8D8D8" fill-rule="nonzero" cx="50" cy="25" rx="50" ry="25"></ellipse>
-            <text id="Reset-timesheet" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.333333343" fill="#333333">
-                <tspan x="9.14648445" y="28">Reset timesheet</tspan>
+            <text id="Reset-timesheet" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.3333333" fill="#333333">
+                <tspan x="9.14648412" y="28">Reset timesheet</tspan>
             </text>
         </g>
-        <g id="use-case-f-2" transform="translate(213.000000, 101.000000)">
+        <g id="use-case-f-4" transform="translate(140.000000, 220.000000)">
             <ellipse id="use-case-background" stroke="#979797" fill="#D8D8D8" fill-rule="nonzero" cx="50" cy="25" rx="50" ry="25"></ellipse>
-            <text id="Enter-reference-time" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.333333343" fill="#333333">
-                <tspan x="11.1445313" y="23">Enter reference</tspan>
-                <tspan x="36.4983724" y="37">times</tspan>
+            <text id="Review-activities" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.3333333" fill="#333333">
+                <tspan x="8.98665336" y="28">Review activities</tspan>
             </text>
         </g>
-        <g id="use-case-f-3" transform="translate(213.000000, 187.000000)">
+        <g id="use-case-f-3" transform="translate(140.000000, 150.000000)">
             <ellipse id="use-case-background" stroke="#979797" fill="#D8D8D8" fill-rule="nonzero" cx="50" cy="25" rx="50" ry="25"></ellipse>
-            <text id="Log-activity" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.333333343" fill="#333333">
-                <tspan x="22.4853516" y="28">Log activity</tspan>
+            <text id="Log-activity" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.3333333" fill="#333333">
+                <tspan x="22.4853514" y="28">Log activity</tspan>
             </text>
         </g>
-        <path d="M82,212 L220,139" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
-        <path d="M82,213 L214,213" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
-        <path d="M82,212 L218,286" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+        <g id="use-case-f-2" transform="translate(260.000000, 80.000000)">
+            <ellipse id="use-case-background" stroke="#979797" fill="#D8D8D8" fill-rule="nonzero" cx="50" cy="25" rx="50" ry="25"></ellipse>
+            <text id="Plan-activities" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.3333333" fill="#333333">
+                <tspan x="16.3173826" y="28">Plan activities</tspan>
+            </text>
+        </g>
+        <g id="use-case-f-1" transform="translate(140.000000, 80.000000)">
+            <ellipse id="use-case-background" stroke="#979797" fill="#D8D8D8" fill-rule="nonzero" cx="50" cy="25" rx="50" ry="25"></ellipse>
+            <text id="Enter-reference-time" font-family="Helvetica" font-size="12" font-weight="normal" letter-spacing="-0.3333333" fill="#333333">
+                <tspan x="11.144531" y="23">Enter reference</tspan>
+                <tspan x="36.4983723" y="37">times</tspan>
+            </text>
+        </g>
+        <path d="M70.5,209.5 L154.5,122.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+        <path d="M240.5,104.5 L259.5,104.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+        <path d="M70.5,296.5 L154.5,210.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(112.500000, 253.500000) scale(1, -1) translate(-112.500000, -253.500000) "></path>
+        <path d="M70,210 L145.5,187.5" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero"></path>
+        <path d="M70,232.5 L145.5,210" id="Line" stroke="#979797" stroke-linecap="square" fill-rule="nonzero" transform="translate(107.750000, 221.250000) scale(1, -1) translate(-107.750000, -221.250000) "></path>
     </g>
 </svg>
